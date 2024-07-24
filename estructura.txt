@@ -90,6 +90,7 @@ CREATE TABLE reservaviaje (
     fecha DATE NOT NULL,
     idvuelos INT NULL,
     idclientes INT NULL,
+    estado VARCHAR(20) NULL,
     FOREIGN KEY (idvuelos) REFERENCES viajes(id) ON DELETE SET NULL ON UPDATE CASCADE,
     FOREIGN KEY (idclientes) REFERENCES clientes(id) ON DELETE SET NULL ON UPDATE CASCADE
 );
